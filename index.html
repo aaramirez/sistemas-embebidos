@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sistemas embebidos e IoT</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Computadores pequeños que miden y actúan sobre el mundo: microcontroladores, entradas y salidas, interrupciones, tiempo real, sensores, energía, los buses I2C y SPI, MQTT y LoRa, seguridad y actualizaciones remotas, de la placa a la nube.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Sistemas embebidos e <b>IoT</b></a><span class="eyebrow">Curso visual e interactivo · Computación</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Computación</span>
+  <h1>Una planta que avisa cuándo regarla, de la placa a la nube</h1>
+  <p class="lede">Hay decenas de microcontroladores en una casa: en la lavadora, el control remoto, el medidor de luz y el router. No tienen pantalla ni sistema operativo de escritorio, cuentan cada miliamperio y deben responder a tiempo. Este curso construye un dispositivo completo, un monitor de plantas, desde el primer LED que parpadea hasta un equipo seguro que se actualiza solo y reporta a la nube.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 11 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Para estudiantes de computación y para quien programa y quiere llevar su código al mundo físico. Conviene saber programar en C o en Python y conocer cómo funciona un procesador y sus interrupciones, que está en Arquitectura del computador. No hace falta comprar nada: todo se hace en un simulador público y gratuito de microcontroladores.</p>
+    <p><b>Cómo está hecho.</b> Un monitor de plantas recorre el curso: un ESP32 con un sensor de humedad del suelo, uno de temperatura y luz, una pantalla pequeña y una bomba de riego. Se construye en un simulador público de microcontroladores en el navegador (Wokwi) y gana una pieza por capítulo: un LED, el sensor, las interrupciones, un sistema operativo de tiempo real, el sueño profundo, los buses, MQTT, la nube y las actualizaciones firmadas. Los laboratorios del curso dejan mover la señal, el reloj o la batería y ver la consecuencia; las prácticas se hacen en el simulador o con herramientas gratuitas en Linux, macOS y Windows.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> La placa</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="que-es-un-sistema-embebido"><span class="n">01</span><b>Qué es un sistema embebido</b><p>Microcontrolador frente a microprocesador, las familias de hoy, la cadena de compilación cruzada y el monitor de plantas.</p></div>
+    <div class="mod soon" data-id="entradas-y-salidas"><span class="n">02</span><b>Entradas y salidas: GPIO, ADC y PWM</b><p>Registros mapeados en memoria, pines digitales, resistencias de *pull-up*, rebote, conversión analógica y modulación por ancho de pulso.</p></div>
+    <div class="mod soon" data-id="interrupciones-y-temporizadores"><span class="n">03</span><b>Interrupciones, temporizadores y el perro guardián</b><p>Rutinas de servicio, el controlador de interrupciones, la latencia, `volatile`, los temporizadores y el *watchdog*.</p></div>
+    <div class="mod soon" data-id="sensores-y-actuadores"><span class="n">04</span><b>Sensores, señales y actuadores</b><p>Muestreo y el teorema de Nyquist-Shannon, ruido, filtros digitales sencillos, calibración y cómo mover una bomba o un motor.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Tiempo y energía</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="tiempo-real"><span class="n">05</span><b>Sistemas de tiempo real y RTOS</b><p>Plazos duros y blandos, FreeRTOS y Zephyr, planificación de tasa monotónica y EDF, la cota de Liu y Layland y la herencia de prioridad.</p></div>
+    <div class="mod soon" data-id="consumo-de-energia"><span class="n">06</span><b>Consumo de energía y vida de la batería</b><p>Dónde se va la corriente, modos de sueño, ciclo de trabajo, presupuesto de energía y cosecha de energía.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Conectar</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="buses-de-la-placa"><span class="n">07</span><b>UART, I2C, SPI y CAN</b><p>Los buses con que el microcontrolador habla con sensores y pantallas: tramas, relojes, direcciones y errores.</p></div>
+    <div class="mod soon" data-id="protocolos-de-iot"><span class="n">08</span><b>Protocolos de IoT: MQTT, CoAP, BLE y LoRa</b><p>Publicar y suscribir con MQTT, CoAP sobre UDP, Bluetooth de baja energía, LoRaWAN y Matter, y cómo elegir.</p></div>
+    <div class="mod soon" data-id="de-la-placa-a-la-nube"><span class="n">09</span><b>De la placa a la nube</b><p>Arquitectura dispositivo-pasarela-nube, la sombra del dispositivo, series de tiempo, paneles, reglas y computación en el borde.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Llevarlo a producción</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="seguridad-y-actualizaciones"><span class="n">10</span><b>Seguridad de dispositivos y actualizaciones remotas</b><p>Arranque seguro, identidad por dispositivo, TLS mutuo, almacenamiento de claves y actualizaciones OTA firmadas con particiones A/B.</p></div>
+    <div class="mod soon" data-id="prompts-embebidos-produccion"><span class="n">11</span><b>Prompts para generar firmware de producción</b><p>Qué pedirle a un asistente de IA para que el firmware que genera tenga tiempo real, bajo consumo, seguridad, OTA y pruebas, y no sea una demo.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/sistemas-embebidos" target="_blank" rel="noopener">github.com/aaramirez/sistemas-embebidos</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
